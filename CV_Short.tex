@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Professional Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\let\latexnofiles\nofiles
+\let\nofiles\relax
+\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{etaremune}
+\usepackage{hyperref}
+
+\newsectionwidth{0pt} % Stops section indenting
+
+% Name shortcuts
+\newcommand*\me[0]{{\bf Williams--Young,~D.~B.}}
+\newcommand*\xsli[0]{Li,~X.}
+\newcommand*\ko[0]{Ko,~J.}
+
+\newcommand{\invited}{\item[$*$\theenumi.]}
+%\newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND ADDRESS(ES) SECTION
+%----------------------------------------------------------------------------------------
+
+\name{David Williams--Young\\ \\} % Your name at the top
+
+% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
+
+\address{{\bf Academic Address} \\ 
+Department of Chemistry \\ 
+University of Washington\\ 
+311A Bagley Hall (office)\\
+Box 351700 (mail)\\
+Seattle, WA, USA 98195-1700\\
+dbwy@u.washington.edu} % Your address 1
+
+\address{{\bf Permanent Address} \\ 
+1737 NW 56th St \\ 
+Apt 504 \\
+Seattle, WA, USA 98107 \\ 
++1 (248) 245-1211} % Your address 2
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{OBJECTIVE}}
+
+\vspace{8pt} % Gap between title and text
+
+To obtain a research position relating to chemical theory and computation.
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{EDUCATION}} 
+
+\vspace{8pt} % Gap between title and text
+
+{\sl Doctor of Philosophy (Pursuant)}, Chemistry \hfill (Projected) May 2018 \\ 
+University of Washington, Seattle, WA   \\ 
+Adviser: Dr. Xiaosong Li
+ 
+{\sl Bachelor of Science (Magna Cum Laude)}, Chemistry, Mathematics \hfill May 2013  \\ 
+Indiana University of Pennsylvania, Indiana, PA \\
+Adviser: Dr. Jaeju Ko
+
+%----------------------------------------------------------------------------------------
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PROFESSIONAL EXPERIENCE}} 
+
+\vspace{8pt} % Gap between title and text
+
+{\sl Graduate Research Assistant} \hfill July 2013 -- Present \\
+University of Washington, Seattle, WA
+
+{\sl Graduate Teaching Assistant} \hfill September 2013 -- Present \\
+University of Washington, Seattle, WA 
+
+{\sl Undergraduate Research Assistant} \hfill September 2011 -- May 2013 \\
+Indiana University of Pennsylvania, Indiana, PA
+
+{\sl Chemistry Tutor} \hfill August 2010 -- May 2011 \\
+Indiana University of Pennsylvania Disability Services, Indiana, PA 
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{COMPUTATIONAL PROFICIENCY}}
+
+\vspace{8pt} % Gap between title and text
+
+I am very proficient in the following computational areas:
+\begin{itemize} \itemsep -2pt
+  \item {\sl Programming Languages:} C/C++/C\#, FORTRAN 77/95/03, Java
+  \item {\sl Scripting Languages:} Python, Julia, R, MATLAB, Octave, C/Bash Shell
+  \item {\sl Libraries / Paradigms:} OpenMP, TBB, MPI, OpenGL, CUDA,
+  OpenACC, PThreads
+  \item {\sl Software:} Gaussian, Mathematica, MATLAB
+\end{itemize}
+
+I have contributed to the development of the following software packages:
+\begin{itemize} \itemsep -2pt
+  \item Chronus Quantum Chemistry (ChronusQ) Software Package ({\sl Principle Developer})
+  \item Gaussian ({\sl Contributor})
+  \vspace{-6pt}
+  \begin{itemize}\itemsep -2pt
+    \item Analytical hessians of time--dependent density functional theory
+    \item Chebyshev expansion of the quantum propagator in real--time density functional theory
+  \end{itemize}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PUBLICATIONS}} 
+\vspace{-2pt} % Gap between title and text
+\begin{center}
+* Indicates equal contribution to published work 
+\end{center}
+
+\begin{etaremune}
+  \item Egidi, F.*; \me*; Baiardi, A.*; Bloino, J.; Scalmani, G.; Frisch, M.; \xsli; Barone, V.; 
+          \emph{J. Chem. Theor. Comp.}, \textbf{2017}, Submitted.
+  \item Petrone,~A.; \me; Lingerfelt,~D.~B.; \xsli;
+	  \emph{J. Phys. Chem. A.}, \textbf{2017}, Submitted.
+  \item Petrone,~A.; Lingerfelt,~D.~B.; \me; \xsli;
+	  \emph{J. Phys. Chem. Lett.}, \textbf{2016}, 7, 4501--4508.
+  \item \me; Goings,~J.; \xsli;
+	  \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11) 5333--5338.
+  \item \me; Egidi,~F.; \xsli;
+	  \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11), 5379--5384.
+  \item Lingerfelt,~D.~B.; \me; Petrone,~A; \xsli; 
+        \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(3), 935--945.
+\end{etaremune}
+%  Papers that are on hold for now:
+%
+%  \item \me*; Lingerfelt, D.~B.*; Petrone, A.; \xsli;
+%	``\emph{Ab Initio Surface Hopping Dynamics within the Particle-Particle 
+%	        Tamm--Dancoff Approximation}"
+%          \emph{J. Chem. Phys. Comm.}, \textbf{2016}, \emph{Submitted}.
+%\begin{center}
+%*Authors contributed equally to this work
+%\end{center}
+
+
+%\section{\centerline{CURRENT SOFTWARE CITATIONS}} 
+%\vspace{15pt} % Gap between title and text
+%
+%\begin{etaremune}
+%  \item \xsli; Valeev,~E.~F.; \me; Ding,~F.; Liu,~H.; Goings,~J.~J.; Petrone,~A.; Lestrange,~P.;
+%        \emph{Chronus Quantum, Beta Version}, \url{http://www.chronusquantum.org}, \textbf{2016}.
+%
+%\item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
+%      Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
+%      Caricato,~M.; Marenich,~A.; Bloino,~J.; Janesko,~B.~G.; Gomperts,~R.; Mennucci,~B.;
+%      Hratchian,~H.~P.; Izmaylov,~A.~F.; Sonnenberg,~J.~L.; \me; Ding,~F.; Lipparini,~F.;
+%      Egidi,~F.; Goings,~J.; Peng,~B.; Petrone,~A.; Ortiz,~J.~V.; Zakrzewski,~V.~G.; Gao,~J.;
+%      Rega,~N.; Zheng,~G.; Liang,~W.; Hada,~M.; Ehara,~M.; Toyota,~K.; Fukuda,~R.; Hasegawa,~J.;
+%      Ishida,~M.; Nakajima,~T.; Honda,~Y.; Kitao,~O.; Nakai,~H.; Vreven,~T.; Throssell,~K.; Montgomery~Jr.,~J.~A.;
+%      Peralta,~J.~E.; Ogliaro,~F.; Bearpark,~M.; Heyd,~J.~J.; Brothers,~E.; Kudin,~K.~N.; Staroverov,~V.~N.; Keith,~T.;
+%      Kobayashi,~R.; Normand,~J.; Raghavachari,~K.; Rendell,~A.; Burant,~J.~C.; Iyengar,~S.~S.;
+%      Tomasi,~J.; Cossi,~M.; Millam,~J.~M.; Klene,~M.; Adamo,~C.; Cammi,~R.;
+%      Ochterski,~J.~W.; Martin,~R.~L.; Morokuma,~K.; Farkas,~O.; Foresman,~J.~B.; and Fox~,~D.~J.;
+%      \emph{Gaussian 16, A.03},
+%      Gaussian, Inc., Wallingford CT, \textbf{2016}.
+%\end{etaremune}
+%
+%\vspace{0.2in} % Some whitespace between sections
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{HONORS}} 
+
+\vspace{-5pt} % Reduce space between section title and contents
+
+\begin{center}
+Nicole A. Boand Endowed Fellowship in Chemistry \hfill ARCS Foundation (2016) \\
+Early Bird Research Assistantship (EBRA) \hfill University of Washington (2013) \\
+Excellence in Chemistry Graduate Fellowship Award (ECGFA) \hfill University of Washington (2013)\\
+Provost Scholar \hfill Indiana University of Pennsylvania (2013)
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PRESENTATIONS}} 
+\vspace{-2pt} % Gap between title and text
+\begin{center}
+* Indicates an invited presentation
+\end{center}
+
+\begin{etaremune}
+  \invited \me; 
+	High Performance Computing Seminar, University of Washington.
+	\textbf{2017}. Oral Presentation.
+  \item \me; Goings, J. J.; \xsli;
+	Theory and Applications of Computational Chemistry (TACC) 2016, Seattle, WA.
+	\textbf{2016}. Poster.
+  \item Egidi F.; \me; \xsli;
+	Low Scaling and Unconventional Electronic Structure Theory (LUEST) 2016, Telluride, CO.
+	\textbf{2016}. Poster.
+  \item \me; Yang, W.; \xsli;
+	Chemical Congress of Pacific Basin Societies (PacifiChem) 2015, Honolulu, HI.
+	\textbf{2015}. 
+	PHYS: Recent Progress in Molecular Theory for Excited-state Electronic Structure and
+	Dynamics. Oral Presentation.
+%  \item Scalmani, G.; Frisch, M.; \me; \xsli;
+%	``\emph{On the analytical second derivatives of the excited state energy in the 
+%	        framework of Time-Dependant Density Functional Theory}";
+%	248h American Chemical Society National Meeting \& Exposition, San Francisco, CA.
+%	\textbf{2014}. COMP: Quantum Chemistry Symposium. Oral Presentation.
+  \item \me; \ko; Ondrechen, M. J.;
+	245th American Chemical Society National Meeting \& Exposition, New Orleans, LA.
+	\textbf{2013}. Sci-Mix Poster Session. Poster.
+  \item \me; \ko; Ondrechen, M. J.;
+	245th American Chemical Society National Meeting \& Exposition, New Orleans, LA.
+	\textbf{2013}. Division of Computers in Chemistry Poster Session. Poster.
+  \item \me; \ko;
+	American Chemical Society Student Member Symposium, Duquesne University. Duquesne, PA.
+	\textbf{2012}. Poster.
+  \item \me; \ko;
+	Undergraduate Research Forum, Indiana University of Pennsylvania. Indiana, PA.
+	\textbf{2012}. Poster.
+  \item Ford, J.; \ko; Mintmier, B.; Machovia, T.; Kang, M.; Owens, A.; \me;
+	Pennsylvania Association of the Council of Trustees Conference, Indiana University of Pennsylvania.
+	Indiana, PA. \textbf{2011}. Oral Presentation.
+\end{etaremune}
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	MEMBERSHIPS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{MEMBERSHIPS}} 
+
+\vspace{-5pt} % Reduce space between section title and contents
+
+\begin{center}
+Alpha Chi Sigma ($\mathrm{AX}\Sigma$), $\Gamma\mathrm{T}$ Chapter, Professional Chemistry Fraternity\\
+American Chemical Society (ACS), Computers in Chemistry Division
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{resume} 
+\end{document}

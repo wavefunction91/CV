@@ -5,3 +5,5 @@
 *.swo
 *.out
 *.bak
+*.bbl
+*.blg
