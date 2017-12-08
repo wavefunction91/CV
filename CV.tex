@@ -35,8 +35,8 @@
 \newcommand*\xsli[0]{Li,~X.}
 \newcommand*\ko[0]{Ko,~J.}
 
-\newcommand{\invited}{\item[$*$\theenumi.]}
-%\newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+%\newcommand{\invited}{\item[$*$\theenumi.]}
+\newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
 
 \begin{document}
 
@@ -74,7 +74,8 @@ Seattle, WA, USA 98107 \\
 
 \vspace{8pt} % Gap between title and text
 
-To obtain a research position relating to chemical theory and computation.
+To obtain a research position relating to high--performance scientific computing and numerical
+linear algebra.
 
 
 %----------------------------------------------------------------------------------------
@@ -83,14 +84,20 @@ To obtain a research position relating to chemical theory and computation.
 
 \section{\centerline{RESEARCH INTERESTS}}
 \begin{itemize} \itemsep -2pt
-  \item Development of low--scaling relativistic electronic structure methods to describe
-  strongly correlated systems, such as transition metal complexes commonly found in
-  the vicinity of the active sites of enzymes.
+%  \item Development of low--scaling relativistic electronic structure methods to describe
+%  strongly correlated systems, such as transition metal complexes commonly found in
+%  the vicinity of the active sites of enzymes.
+%  \item Application of abstract mathematical paradigms, such as algebraic topology, to
+%  develop elegant and novel solutions to the problems that arise in ab initio electronic
+%  structure theory.
+%  \item Development of high--performance algorithms to treat the electronically non--adiabatic
+%  dynamics of quantum molecular systems.
+  \item Development of high--performance and reduced scaling relativistic electronic structure
+  methods.
+  \item Algorithmic development for high--performance quaternionic linear algebra software.
   \item Application of abstract mathematical paradigms, such as algebraic topology, to
   develop elegant and novel solutions to the problems that arise in ab initio electronic
   structure theory.
-  \item Development of high--performance algorithms to treat the electronically non--adiabatic
-  dynamics of quantum molecular systems.
 \end{itemize}
 
 %\section{\centerline{RESEARCH SUMMARY}}
@@ -317,23 +324,11 @@ I have contributed to the development of the following software packages:
 \vspace{15pt} % Gap between title and text
 
 \begin{etaremune}
+  \item \me; \emph{HAXX: Hamilton's Quaternion Algebra for CXX}, \url{http://github.com/wavefunction91/HAXX},
+  \textbf{2017}.
+
   \item \xsli; Valeev,~E.~F.; \me; Ding,~F.; Liu,~H.; Goings,~J.~J.; Petrone,~A.; Lestrange,~P.;
         \emph{Chronus Quantum, Beta Version}, \url{http://www.chronusquantum.org}, \textbf{2016}.
-
-
-\item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
-      Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
-      Caricato,~M.; Marenich,~A.; Bloino,~J.; Janesko,~B.~G.; Gomperts,~R.; Mennucci,~B.;
-      Hratchian,~H.~P.; Izmaylov,~A.~F.; Sonnenberg,~J.~L.; \me; Ding,~F.; Lipparini,~F.;
-      Egidi,~F.; Goings,~J.; Peng,~B.; Petrone,~A.; Ortiz,~J.~V.; Zakrzewski,~V.~G.; Gao,~J.;
-      Rega,~N.; Zheng,~G.; Liang,~W.; Hada,~M.; Ehara,~M.; Toyota,~K.; Fukuda,~R.; Hasegawa,~J.;
-      Ishida,~M.; Nakajima,~T.; Honda,~Y.; Kitao,~O.; Nakai,~H.; Vreven,~T.; Throssell,~K.; Montgomery~Jr.,~J.~A.;
-      Peralta,~J.~E.; Ogliaro,~F.; Bearpark,~M.; Heyd,~J.~J.; Brothers,~E.; Kudin,~K.~N.; Staroverov,~V.~N.; Keith,~T.;
-      Kobayashi,~R.; Normand,~J.; Raghavachari,~K.; Rendell,~A.; Burant,~J.~C.; Iyengar,~S.~S.;
-      Tomasi,~J.; Cossi,~M.; Millam,~J.~M.; Klene,~M.; Adamo,~C.; Cammi,~R.;
-      Ochterski,~J.~W.; Martin,~R.~L.; Morokuma,~K.; Farkas,~O.; Foresman,~J.~B.; and Fox~,~D.~J.;
-      \emph{Gaussian Development Version, Revision I.09},
-      Gaussian, Inc., Wallingford CT, \textbf{2016}.
 
 \item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
       Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
@@ -379,7 +374,11 @@ Provost Scholar \hfill Indiana University of Pennsylvania (2013)
 
 \vspace{15pt} % Gap between title and text
 \begin{etaremune}
-  \invited \me; 
+  \item  \me; van Beeuman, R.; Yang, C.; \xsli;
+         ``\emph{A Novel Model Reduction Algorithm for the Efficient Evaluation of Molecular Response Properties}";
+	 254th American Chemical Society National Meeting \& Exposition, Washington, D.C. 
+	 \textbf{2017}. Poster.
+  \item * \me; 
         ``\emph{Studying Semi--Classical Molecular Light--Matter Interaction through Time--Dependent
 	  Density Function Theory}";
 	High Performance Computing Seminar, University of Washington.
