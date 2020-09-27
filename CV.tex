@@ -49,8 +49,7 @@
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
-\address{{\bf Academic Address} \\ 
-Computational Research Division \\ 
+\address{Computational Research Division \\ 
 Lawrence Berkeley National Laboratory\\ 
 1 Cyclotron Road \\
 50A-2117 (office)\\
@@ -78,7 +77,7 @@ dbwy@lbl.gov} % Your address 1
 \vspace{8pt} % Gap between title and text
 
 To obtain a research position relating to high--performance scientific computing and numerical
-linear algebra.
+linear algebra and their interplay with methods development in electronic structure theory.
 
 
 %----------------------------------------------------------------------------------------
@@ -95,12 +94,13 @@ linear algebra.
 %  structure theory.
 %  \item Development of high--performance algorithms to treat the electronically non--adiabatic
 %  dynamics of quantum molecular systems.
-  \item Development of high--performance and reduced scaling relativistic electronic structure
-  methods.
-  \item Algorithmic development for high--performance linear algebra software.
-  \item Application of abstract mathematical paradigms, such as algebraic topology, to
-  develop elegant and novel solutions to the problems that arise in ab initio electronic
-  structure theory.
+  \item Development of high--performance and reduced scaling electronic structure
+  methods on emerging architectures (GPUs, FPGAs, etc).
+  \item Algorithmic development for high--performance linear algebra software
+  (Krylov solvers).
+  \item Application of abstract mathematical paradigms, such as algebraic
+  topology and differential geometry, to develop elegant and novel solutions to
+  the problems that arise in ab initio electronic structure theory.
 \end{itemize}
 
 %\section{\centerline{RESEARCH SUMMARY}}
@@ -208,8 +208,8 @@ University of Washington, Seattle, WA
 {\sl Undergraduate Research Assistant} \hfill September 2011 -- May 2013 \\
 Indiana University of Pennsylvania, Indiana, PA
 
-{\sl Chemistry Tutor} \hfill August 2010 -- May 2011 \\
-Indiana University of Pennsylvania Disability Services, Indiana, PA 
+%{\sl Chemistry Tutor} \hfill August 2010 -- May 2011 \\
+%Indiana University of Pennsylvania Disability Services, Indiana, PA 
 %\begin{itemize}
 %  \item Provided supplemental course instruction for the General and Organic Chemistry
 %    series for students with disabilities. This primarily entailed meeting with students
@@ -238,16 +238,15 @@ Indiana University of Pennsylvania Disability Services, Indiana, PA
 
 I am a specialist in the following computational areas:
 \begin{itemize} \itemsep -2pt
-  \item {\sl Programming Languages:} C++, C, FORTRAN 77/95/03
-  \item {\sl Libraries / Paradigms:} OpenMP, MPI, PThreads
-  \item {\sl Software:} Gaussian
+  \item {\sl Programming Languages:} C++
+  \item {\sl Libraries / Paradigms:} OpenMP, MPI, BLAS/LAPACK, CUDA
 \end{itemize}
 
 I am very proficient in the following computational areas:
 \begin{itemize} \itemsep -2pt
-  \item {\sl Programming Languages:} Java, C\#
-  \item {\sl Scripting Languages:} Python, Julia, R, MATLAB, Octave, C/Bash Shell
-  \item {\sl Libraries / Paradigms:} TBB, OpenGL, CUDA, OpenACC
+  \item {\sl Programming Languages:} C, FORTRAN 77/95/03
+  \item {\sl Scripting Languages:} Python, Julia, Octave, C/Bash Shell
+  \item {\sl Libraries / Paradigms:} TBB, OpenACC
   \item {\sl Software:} Mathematica, MATLAB
 \end{itemize}
 
@@ -274,7 +273,7 @@ I have contributed to the development of the following software packages:
 \section{\centerline{PUBLICATIONS}} 
 \vspace{-0.1in} % Some whitespace between sections
 \begin{center}
-{\bf 19 in press publications, 1 accepted pending publication, 2 submitted manuscripts, 5 as first author (named), 3 as equally contributing (first) author, 1 invited.}\\
+{\bf 21 in press publications, 1 accepted pending publication, 2 submitted manuscripts, 6 as first author (named), 3 as equally contributing (first) author, 2 invited.}\\
 
 * Indicates equal contribution to published work. \\$\dagger$ Indicates that the publication was invited.
 \end{center}
@@ -282,20 +281,26 @@ I have contributed to the development of the following software packages:
 \subsection{Lawrence Berkeley National Laboratory\hfill 2018-Present}
 
 \begin{etaremune}
-  \item \me; \cy;
-        ``\emph{Parallel Shift-Invert Spectrum Slicing on Distributed Architectures with GPU Accelerators}"
-        in \emph{Proceedings of the 49th International Conference on Parallel Processing (ICPP'20)}, \textbf{2020},
-        Accepted.
-  \item \me; Beckman, P.G.; \cy;
-        ``\emph{A Shift Selection Strategy for Parallel Shift-Invert Spectrum Slicing in Symmetric Self-Consistent 
-        Eigenvalue Computation}";
-        \emph{ACM Trans. Math. Soft.}, \textbf{2019}, Submitted.
   \item Kowalski, K.; Aprà, E.; Bair, R.; Boschen, J.; Bylaska, E.; Daily, J.; de Jong, W.; Dunning, T.; 
         Govind, N.; Harrison, R.; Keipert, K.; Krishnamoorthy, S.; Kumar, S.; Mutlu, E.; Palmer, B.; 
         Panyala, A.; Peng, B.; Richard, R.; Straatsma, T.; Valeev, E.; Valiev, M.; van Dam, H.; \me; \cy; 
         Zalewski, M.; Windus, T.; 
        ``\emph{NWChemEx—Computational Chemistry for the Exascale Era}"; \emph{Chemical Reviews},
-       \textbf{2019}, Submitted.
+       \textbf{2020}, Submitted.
+  \item Ahmed, H.; \me; Ibrahim, K.Z.; \cy;
+        ``\emph{Performance Modeling and Tuning for DFT Calculations on Heterogeneous Architectures}";
+        \emph{International Symposium on Computer Architecture and High Performance Computing},
+        \textbf{2020}, Submitted.
+  \item $\dagger$ \me; de Jong, W.A; van Dam, H.J.J.; \cy;
+        ``\emph{On the Efficient Evaluation of the Exchange Correlation Potential on Graphics Processing Unit Clusters}";
+        \emph{Frontiers in Chemistry}, \textbf{2020}, Accepted.
+  \item \me; Beckman, P.G.; \cy;
+        ``\emph{A Shift Selection Strategy for Parallel Shift-Invert Spectrum Slicing in Symmetric Self-Consistent 
+        Eigenvalue Computation}";
+        \emph{ACM Trans. Math. Soft.}, \textbf{2020}, 46, 4, Article 35 (September 2020).
+  \item \me; \cy;
+        ``\emph{Parallel Shift-Invert Spectrum Slicing on Distributed Architectures with GPU Accelerators}"
+        in \emph{Proceedings of the 49th International Conference on Parallel Processing (ICPP'20)}, \textbf{2020}.
   \item Peng, B.; Van Beeumen, R.; \me; Kowalski, K.; \cy;
         ``\emph{Approximate Green’s Function Coupled Cluster Method Employing 
           Effective Dimension Reduction}";
@@ -344,7 +349,7 @@ I have contributed to the development of the following software packages:
 	  TDDFT Systems}";
         \emph{J. Chem. Theor. Comp.}, \textbf{2018}, 14(4), 2034--2041.
   \item Lestrange, P.; \me; Jimenez--Hoyos, C.; \xsli;
-        ``\emph{An Efficient Implementaion of Variation After Projection 
+        ``\emph{An Efficient Implementation of Variation After Projection 
 	  Generalized Hartree--Fock}"
         \emph{J. Chem. Theor. Comp.}, \textbf{2018}, 14(2), 588--596.
   \item Barclay, M. S.; Quincy, T. J.; \me; Caricato, M.; Elles, C. G.;
@@ -406,32 +411,32 @@ I have contributed to the development of the following software packages:
 %
 %\vspace{0.2in} % Some whitespace between sections
 
-\section{\centerline{CURRENT SOFTWARE CITATIONS}} 
-\vspace{15pt} % Gap between title and text
-
-\begin{etaremune}
-  \item \me; \emph{HAXX: Hamilton's Quaternion Algebra for CXX}, \url{http://github.com/wavefunction91/HAXX},
-  \textbf{2019}.
-
-  \item \xsli; Valeev,~E.~F.; \me; Ding,~F.; Liu,~H.; Goings,~J.~J.; Petrone,~A.; Lestrange,~P.;
-        \emph{Chronus Quantum, Beta Version}, \url{http://www.chronusquantum.org}, \textbf{2019}.
-
-\item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
-      Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
-      Caricato,~M.; Marenich,~A.; Bloino,~J.; Janesko,~B.~G.; Gomperts,~R.; Mennucci,~B.;
-      Hratchian,~H.~P.; Izmaylov,~A.~F.; Sonnenberg,~J.~L.; \me; Ding,~F.; Lipparini,~F.;
-      Egidi,~F.; Goings,~J.; Peng,~B.; Petrone,~A.; Ortiz,~J.~V.; Zakrzewski,~V.~G.; Gao,~J.;
-      Rega,~N.; Zheng,~G.; Liang,~W.; Hada,~M.; Ehara,~M.; Toyota,~K.; Fukuda,~R.; Hasegawa,~J.;
-      Ishida,~M.; Nakajima,~T.; Honda,~Y.; Kitao,~O.; Nakai,~H.; Vreven,~T.; Throssell,~K.; Montgomery~Jr.,~J.~A.;
-      Peralta,~J.~E.; Ogliaro,~F.; Bearpark,~M.; Heyd,~J.~J.; Brothers,~E.; Kudin,~K.~N.; Staroverov,~V.~N.; Keith,~T.;
-      Kobayashi,~R.; Normand,~J.; Raghavachari,~K.; Rendell,~A.; Burant,~J.~C.; Iyengar,~S.~S.;
-      Tomasi,~J.; Cossi,~M.; Millam,~J.~M.; Klene,~M.; Adamo,~C.; Cammi,~R.;
-      Ochterski,~J.~W.; Martin,~R.~L.; Morokuma,~K.; Farkas,~O.; Foresman,~J.~B.; and Fox~,~D.~J.;
-      \emph{Gaussian 16, A.03},
-      Gaussian, Inc., Wallingford CT, \textbf{2016}.
-\end{etaremune}
-
-\vspace{0.2in} % Some whitespace between sections
+%\section{\centerline{CURRENT SOFTWARE CITATIONS}} 
+%\vspace{15pt} % Gap between title and text
+%
+%\begin{etaremune}
+%  \item \me; \emph{HAXX: Hamilton's Quaternion Algebra for CXX}, \url{http://github.com/wavefunction91/HAXX},
+%  \textbf{2019}.
+%
+%  \item \xsli; Valeev,~E.~F.; \me; Ding,~F.; Liu,~H.; Goings,~J.~J.; Petrone,~A.; Lestrange,~P.;
+%        \emph{Chronus Quantum, Beta Version}, \url{http://www.chronusquantum.org}, \textbf{2019}.
+%
+%\item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
+%      Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
+%      Caricato,~M.; Marenich,~A.; Bloino,~J.; Janesko,~B.~G.; Gomperts,~R.; Mennucci,~B.;
+%      Hratchian,~H.~P.; Izmaylov,~A.~F.; Sonnenberg,~J.~L.; \me; Ding,~F.; Lipparini,~F.;
+%      Egidi,~F.; Goings,~J.; Peng,~B.; Petrone,~A.; Ortiz,~J.~V.; Zakrzewski,~V.~G.; Gao,~J.;
+%      Rega,~N.; Zheng,~G.; Liang,~W.; Hada,~M.; Ehara,~M.; Toyota,~K.; Fukuda,~R.; Hasegawa,~J.;
+%      Ishida,~M.; Nakajima,~T.; Honda,~Y.; Kitao,~O.; Nakai,~H.; Vreven,~T.; Throssell,~K.; Montgomery~Jr.,~J.~A.;
+%      Peralta,~J.~E.; Ogliaro,~F.; Bearpark,~M.; Heyd,~J.~J.; Brothers,~E.; Kudin,~K.~N.; Staroverov,~V.~N.; Keith,~T.;
+%      Kobayashi,~R.; Normand,~J.; Raghavachari,~K.; Rendell,~A.; Burant,~J.~C.; Iyengar,~S.~S.;
+%      Tomasi,~J.; Cossi,~M.; Millam,~J.~M.; Klene,~M.; Adamo,~C.; Cammi,~R.;
+%      Ochterski,~J.~W.; Martin,~R.~L.; Morokuma,~K.; Farkas,~O.; Foresman,~J.~B.; and Fox~,~D.~J.;
+%      \emph{Gaussian 16, A.03},
+%      Gaussian, Inc., Wallingford CT, \textbf{2016}.
+%\end{etaremune}
+%
+%\vspace{0.2in} % Some whitespace between sections
 %----------------------------------------------------------------------------------------
 %	HONORS SECTION
 %----------------------------------------------------------------------------------------
@@ -465,6 +470,7 @@ Reviewer, \emph{The Journal of Chemical Theory and Computation} \hfill (2019) \\
 Reviewer, \emph{Journal of Computational Physics}               \hfill (2019) \\
 Reviewer, \emph{The Journal of Chemical Physics}                \hfill (2020) \\
 Reviewer, \emph{The International Journal of Quantum Chemistry} \hfill (2020) \\
+Reviewer, \emph{Computer Physics Communications}                \hfill (2020) \\
 Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020) 
 \end{center}
 
@@ -505,10 +511,10 @@ Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scient
 	  Expansion of the Quantum Propagator}";
 	Theory and Applications of Computational Chemistry (TACC) 2016, Seattle, WA.
 	\textbf{2016}. Poster.
-  \item Egidi F.; \me; \xsli;
-        ``\emph{Electronic Structure Methods for Relativistic Effects in Excited States}";
-	Low Scaling and Unconventional Electronic Structure Theory (LUEST) 2016, Telluride, CO.
-	\textbf{2016}. Poster.
+%  \item Egidi F.; \me; \xsli;
+%        ``\emph{Electronic Structure Methods for Relativistic Effects in Excited States}";
+%	Low Scaling and Unconventional Electronic Structure Theory (LUEST) 2016, Telluride, CO.
+%	\textbf{2016}. Poster.
   \item \me; Yang, W.; \xsli;
         ``\emph{Moving past the particle-hole description of excited states: Affordable methodologies}";
 	Chemical Congress of Pacific Basin Societies (PacifiChem) 2015, Honolulu, HI.
@@ -536,10 +542,10 @@ Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scient
 	``\emph{Prediction of Relative Activities of Enzymes using Computed Chemical Properties}";
 	Undergraduate Research Forum, Indiana University of Pennsylvania. Indiana, PA.
 	\textbf{2012}. Poster.
-  \item Ford, J.; \ko; Mintmier, B.; Machovia, T.; Kang, M.; Owens, A.; \me;
-	``\emph{Undergraduate Research in Biomass Utilization Symposium}",
-	Pennsylvania Association of the Council of Trustees Conference, Indiana University of Pennsylvania.
-	Indiana, PA. \textbf{2011}. Oral Presentation.
+%  \item Ford, J.; \ko; Mintmier, B.; Machovia, T.; Kang, M.; Owens, A.; \me;
+%	``\emph{Undergraduate Research in Biomass Utilization Symposium}",
+%	Pennsylvania Association of the Council of Trustees Conference, Indiana University of Pennsylvania.
+%	Indiana, PA. \textbf{2011}. Oral Presentation.
 \end{etaremune}
 %----------------------------------------------------------------------------------------
 
@@ -562,19 +568,19 @@ Society for Industrial and Applied Mathematics (SIAM), Computer Science and Engi
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{INTERESTS}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-World percussion, kayaking, hiking, climbing, Linux kernel development
-\end{center} 
+%\vspace{0.2in} % Some whitespace between sections
+%
+%%----------------------------------------------------------------------------------------
+%%	INTERESTS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{\centerline{INTERESTS}} 
+%
+%\vspace{-5pt} % Reduce space between section title and contents
+%
+%\begin{center}
+%World percussion, kayaking, hiking, climbing, Linux kernel development
+%\end{center} 
 
 %----------------------------------------------------------------------------------------
 
