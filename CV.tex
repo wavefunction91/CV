@@ -38,6 +38,9 @@
 
 %\newcommand{\invited}{\item[$*$\theenumi.]}
 \newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+\newcommand{\presentation}[6]{%
+{#1}; ``\emph{#2}"; {#3}; {#4}; \textbf{#5}; {#6}.%
+}
 
 \begin{document}
 
@@ -49,8 +52,8 @@
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
-\address{Research Scientist,\\
-Computational Chemisty, Materials and Climate Group (CCMC),\\
+\address{Research Scientist (Career-Track),\\
+Applied Commputing for Scientific Discovery Group (ACSD),\\
 Applied Mathematics and Computational Research Division (AMCR),\\ 
 Lawrence Berkeley National Laboratory\\ 
 50A-2117 (office),  
@@ -98,11 +101,15 @@ dbwy@lbl.gov} % Your address 1
 %  dynamics of quantum molecular systems.
   \item Development of high--performance and reduced scaling electronic structure
   methods on emerging architectures (GPUs, FPGAs, etc).
-  \item Algorithmic development for high--performance linear algebra software
+  \item Development of novel field-theoretic methods for the elucidation of relativistic
+  electronic structure in superheavy elements.
+  \item Development of novel quantum algorithms for the simulation of the relativistic
+  many-body problem.
+  \item The intersection of high-performance computing and quantum information science.
+  \item Algorithmic development for high--performance, sparse linear algebra software
   (Krylov solvers).
-  \item Application of abstract mathematical paradigms, such as algebraic
-  topology and differential geometry, to develop elegant and novel solutions to
-  the problems that arise in ab initio electronic structure theory.
+  %\item Application of algebraic topology and differential geometry to develop elegant and 
+  %novel solutions to the problems that arise in ab initio electronic structure theory.
 \end{itemize}
 
 %\section{\centerline{RESEARCH SUMMARY}}
@@ -156,9 +163,9 @@ dbwy@lbl.gov} % Your address 1
 
 \vspace{8pt} % Gap between title and text
 
-{\sl \bf Research Scientist} \dotfill February 2021 -- Present \\
+{\sl \bf Research Scientist (Career-Track)} \dotfill February 2021 -- Present \\
 {\sl \bf Postdoctoral Fellow} \dotfill July 2018 -- February 2021\\
-Computational Research Division \\
+Applied Mathematics and Computational Research Division \\
 Lawrence Berkeley National Laboratory, 
 Berkeley, CA
 
@@ -241,13 +248,13 @@ Adviser: Dr. Jaeju Ko
 
 I am a specialist in the following computational areas:
 \begin{itemize} \itemsep -2pt
-  \item {\sl Programming Languages:} C++
-  \item {\sl Libraries / Paradigms:} OpenMP, MPI, BLAS/LAPACK, CUDA
+  \item {\sl Programming Languages:} C++, CUDA
+  \item {\sl Libraries / Paradigms:} OpenMP, MPI, BLAS/(Sca)LAPACK
 \end{itemize}
 
 I am very proficient in the following computational areas:
 \begin{itemize} \itemsep -2pt
-  \item {\sl Programming Languages:} C, FORTRAN 77/95/03
+  \item {\sl Programming Languages:} C, FORTRAN 77/95/03, HIP, SYCL
   \item {\sl Scripting Languages:} Python, Julia, Octave, C/Bash Shell
   \item {\sl Libraries / Paradigms:} TBB, OpenACC
   \item {\sl Software:} Mathematica, MATLAB
@@ -257,6 +264,8 @@ I have contributed to the development of the following software packages:
 \begin{itemize} \itemsep -2pt
   \item The Chronus Quantum (ChronusQ) Software Package ({\sl Principle Developer})
   \item NWChemEx ({\sl Contributor})
+  \item Massively Parallel Quantum Chemistry (MPQC4) ({\sl Contributor})
+  \item TiledArray ({\sl Contributor})
   \item Gaussian ({\sl Contributor})
 %  \vspace{-6pt}
 %  \begin{itemize}\itemsep -2pt
@@ -276,7 +285,8 @@ I have contributed to the development of the following software packages:
 \section{\centerline{PUBLICATIONS}} 
 \vspace{-0.1in} % Some whitespace between sections
 \begin{center}
-{\bf 26 in press publications, 1 accepted pending publication, 7 as first author (named), \\3 as equally contributing (first) author, 2 invited.}\\
+{\bf 28 in press publications, 1 accepted pending publication, 5 submitted manuscripts, \\
+  9 as first author (named), 3 as equally contributing (first) author, 5 invited.}\\
 
 * Indicates equal contribution to published work. \\$\dagger$ Indicates that the publication was invited.
 \end{center}
@@ -284,10 +294,37 @@ I have contributed to the development of the following software packages:
 \subsection{Lawrence Berkeley National Laboratory\hfill 2018-Present}
 
 \begin{etaremune}
+  \item $\dagger$ \me; Popovici, D.T; Clark, D.; Asadchev, A.; Waldrop, J.; Windus, T.L.;
+        Valeev, E.F.; de Jong, W.A;
+        ``\emph{Massively Parallel, GPU Accelerated Fock Construction for Hybrid, Gaussian 
+                Basis Density Functional Theory}";
+        \emph{J. Chem. Phys.}; \textbf{2023}. Submitted.
+  \item $\dagger$ \me; Tubman, N.M.; Mejuto-Zaera, C.; de Jong, W.A.;
+        ``\emph{A Parallel, Distributed Memory Implementation of the Adaptive 
+                Sampling Configuration Interaction Method}";
+        \emph{J. Chem. Phys.}; \textbf{2023}. Submitted. 
+  \item Shen, Y.; Klymko, K.; Sud, J.; \me; de Jong, W.A.; Tubman, N.M;
+    ``\emph{Real-Time Krylov Theory for Quantum Computing Algorithms}";
+    \textbf{2023}. Submitted.
+  \item Gomes, N.; \me;  de Jong, W.A.;
+    ``\emph{Computing the Many-Body Green's Function with Adaptive Variational 
+            Quantum Dynamics}";
+    \emph{J. Chem. Theory Comput.}; \textbf{2023}. Submitted.
+  \item $\dagger$ Genovese, L.; Giannozzi, P.; \me;
+        ``\emph{IOP Roadmap: Density functional methods - Implementation, 
+                Challenges, Successes}";
+        Book chapter. Submitted.
+  \item Sid-Lakhdar, W.M.; Cayrols, S.; Bielich, D.; Abdelfattah, A.; Gates, M.; Luszczek, P.; Tomov, S.; 
+        \me; Johansen, H.; Davis, T.; Dongerra, J.; 
+        ``\emph{PAQR: Pivoting Avoiding QR factorization}"; 
+        IEEE International Parallel \& Distributed Processing Symposium (IPDPS 23); \textbf{2023}. Accepted.
+  \item Mejuto-Zaera, C.; Tzeli, D; \me; Tubman, N.M.; Matoušek, M.; Brabec, J.; Veis, L.; Xantheas, S; de Jong, W.A.; 
+       ``\emph{The Effect of Geometry, Spin and Orbital Optimization in Achieving Accurate, Fully-Correlated Results for Iron-Sulfur 
+                Cubanes}"; \emph{J. Chem. Theory Comput}; \textbf{2022}. 18(2), 687–702.
   \item Bez, J.L.; Tang, H.; Xie, B.; \me; Latham, R.; Ross, R.; Oral, S.; Byna, S.;
         ``\emph{I/O Bottleneck Detection and Tuning:Connecting the Dots using Interactive Log Analysis}";
-        \emph{The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC21)}, 
-        \textbf{2021}, Accepted.
+        \emph{2021 IEEE/ACM 6th International Parallel Data Systems Workshop (PDSW)}, 
+        \textbf{2021}.
   \item \me; Bagusetty, A.; de Jong, W.A.; Doerfler, D.; vam Dam, H.J.J.; Vazquez--Mayagoitia, A.;
         Windus, T.L.; Yang, C.;
         ``\emph{Achieving Performance Portability in Gaussian Basis Set Density Functional Theory 
@@ -475,18 +512,45 @@ Provost Scholar \hfill Indiana University of Pennsylvania (2013)
 %----------------------------------------------------------------------------------------
 %	SERVICE SECTION
 %----------------------------------------------------------------------------------------
-
+\newpage
 \section{\centerline{PROFESSIONAL SERVICE}} 
 
 %\vspace{-5pt} % Reduce space between section title and contents
 
+%\begin{center}
+%Reviewer, \emph{Molecular Physics}                \hfill (2023) \\
+%Review Panelist, \emph{NSF Office of Advanced Cyberinfrastructure}, \hfill (2022) \\
+%Reviewer, \emph{The Journal of Chemical Physics}                \hfill (2020) \\
+%Reviewer, \emph{The International Journal of Quantum Chemistry} \hfill (2020) \\
+%Reviewer, \emph{Computer Physics Communications}                \hfill (2020) \\
+%Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020) \\ 
+%Minisymposium Organizer, \emph{SIAM Conference on Computational Science and Engineering} \hfill (2019,2021,2023) \\ 
+%Reviewer, \emph{The Journal of Chemical Theory and Computation} \hfill (2019) \\
+%Reviewer, \emph{Journal of Computational Physics}               \hfill (2019) 
+%\end{center}
+~\\
+\centerline{\bf Journal Review}
+\vspace{-20pt}
 \begin{center}
-Reviewer, \emph{The Journal of Chemical Theory and Computation} \hfill (2019) \\
-Reviewer, \emph{Journal of Computational Physics}               \hfill (2019) \\
-Reviewer, \emph{The Journal of Chemical Physics}                \hfill (2020) \\
-Reviewer, \emph{The International Journal of Quantum Chemistry} \hfill (2020) \\
-Reviewer, \emph{Computer Physics Communications}                \hfill (2020) \\
-Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020) 
+  \emph{Molecular Physics}, 
+  \emph{The Journal of Chemical Physics}, 
+  \emph{The International Journal of Quantum Chemistry}, 
+  \emph{Computer Physics Communications},
+  \emph{The Journal of Chemical Theory and Computation},
+  \emph{Journal of Computational Physics}
+\end{center}
+
+\centerline{\bf Proposal Review}
+\vspace{-15pt}
+\begin{center}
+\emph{NSF Office of Advanced Cyberinfrastructure} \hfill (2022, 2023)
+\end{center}
+
+\centerline{\bf Conference Symposium Organization}
+\vspace{-15pt}
+\begin{center}
+\emph{SIAM Conference on Computational Science and Engineering}        \hfill (2019, 2021, 2023) \\
+\emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020)
 \end{center}
 
 %----------------------------------------------------------------------------------------
@@ -499,64 +563,141 @@ Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scient
 
 \vspace{15pt} % Gap between title and text
 \begin{etaremune}
-  \item \me; \cy;
-        ``\emph{Parallel Shift-Invert Spectrum Slicing for Symmetric Self-Consistent Eigenvalue Computation}";
-        Society for Industrial and Applied Mathematics Conference on Parallel Processing for Scientific Computing (SIAM-PP20),
-        Seattle, WA. \textbf{2020}. Oral Presentation.
-  \item \me; Van Beeuman, R.; \cy; \xsli;
-        ``\emph{A General Model Order Reduction Scheme for the Evaluation of Spectroscopic Properties and Excited States}";
-        American Physical Society March Meeting 2019, Boston, MA.
-        \textbf{2019}. Oral Presentation.
-  \item * \me;
-        ``\emph{On the High Performance Implementation of Quaternionic Matrix Operations}";
-        Society for Industrial and Applied Mathematics Conference on Computational Science and Engineering (SIAM-CSE19),
-        Spokane, WA. \textbf{2019}. Oral Presentation.
-        \textbf{2019}. Oral Presentation
-  \item  \me; Van Beeuman, R.; \cy; \xsli;
-         ``\emph{A Novel Model Reduction Algorithm for the Efficient Evaluation of Molecular Response Properties}";
-	 254th American Chemical Society National Meeting \& Exposition, Washington, D.C. 
-	 \textbf{2017}. Poster.
-  \item * \me; 
-        ``\emph{Studying Semi--Classical Molecular Light--Matter Interaction through Time--Dependent
-	  Density Function Theory}";
-	High Performance Computing Seminar, University of Washington.
-	\textbf{2017}. Oral Presentation.
-  \item \me; Goings, J. J.; \xsli;
-        ``\emph{Accelerating Real--Time Time--Dependent Density Functional Theory with a Chebyshev 
-	  Expansion of the Quantum Propagator}";
-	Theory and Applications of Computational Chemistry (TACC) 2016, Seattle, WA.
-	\textbf{2016}. Poster.
+  \item \presentation%
+        {\me}%
+        {Revisiting Pseudospectral Methods for Hybrid Kohn-Sham Density Functional Theory in the Age of Exascale Computing}%
+        {American Phyiscal Society March Meeting 2023}%
+        {Las Vegas, NV}%
+        {2023}%
+        {Oral Presentation} 
+  \item * \presentation%
+        {\me}%
+        {Perspective on High-Performance Algorithms for Eigenvalue Problems in Physical Simulations}%
+        {Society for Industrial and Applied Mathematics Conference on Computational Science and Engineering (SIAM-CSE23)}%
+        {Amsterdam, The Netherlands}%
+        {2023}%
+        {Oral Presentation} 
+  \item * \presentation%
+        {\me}%
+        {Modular Design Patterns for the Sustainable Development of High-Performance Computational Chemistry Software}%
+        {Basic Energy Sciences Workshop on Sustainable Computational Chemistry Software Development, Integration, and Application}%
+        {Seattle, WA}%
+        {2022}%
+        {Oral Presentation} 
+  \item * \presentation%
+        {\me}%
+        {Low-Order, Scalable Eigensolvers for Electronic Structure Simulations Based on Spectrum Slicing}%
+        {CECAM Workshop on Challenges and Advances in Solving Eigenproblems for Electronic Structure Theory}%
+        {Lausanne, Switzerland}%
+        {2022}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me}%
+        {Revisiting Pseudospectral Methods for Hybrid Kohn-Sham Density Functional Theory in the Age of Exascale Computing}%
+        {263rd American Chemical Society National Meeting \& Exposition}%
+        {San Diego, CA}%
+        {2022}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me}%
+        {Developing (Semi)numerical Methods for Hybrid Kohn-Sham Density Functional Theory in the Age of Exascale Computing}%
+        {The International Chemical Congress of Pacific Basin Societies (Pacifichem '21)}%
+        {Virtual}%
+        {2021}%
+        {Oral Presentation} 
+  \item * \presentation%
+        {\me}%
+        {Parallel Shift-Invert Spectrum Slicing for Symmetric Self-Consistent Eigenvalue Computation}%
+        {Society for Industrial and Applied Mathematics Conference on Computational Science and Engineering (SIAM-CSE21)}%
+        {Virtual}%
+        {2021}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me}%
+        {Parallel Shift-Invert Spectrum Slicing on Computing Clusters with GPU Accelerators}%
+        {49th International Conference on Parallel Processing (ICPP20)}%
+        {Virtual}%
+        {2020}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me; \cy}%
+        {Parallel Shift-Invert Spectrum Slicing for Symmetric Self-Consistent Eigenvalue Computation}%
+        {Society for Industrial and Applied Mathematics Conference on Parallel Processing for Scientific Computing (SIAM-PP20)}%
+        {Seattle, WA}%
+        {2020}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me; Van Beeuman, R.; \cy; \xsli}%
+        {A General Model Order Reduction Scheme for the Evaluation of Spectroscopic Properties and Excited States}%
+        {American Physical Society March Meeting 2019}%
+        {Boston, MA}%
+        {2019}%
+        {Oral Presentation} 
+  \item * \presentation%
+        {\me}%
+        {On the High Performance Implementation of Quaternionic Matrix Operations}%
+        {Society for Industrial and Applied Mathematics Conference on Computational Science and Engineering (SIAM-CSE19)}%
+        {Spokane, WA}%
+        {2019}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me; Van Beeuman, R.; \cy; \xsli}%
+        {A Novel Model Reduction Algorithm for the Efficient Evaluation of Molecular Response Properties}%
+        {254th American Chemical Society National Meeting \& Exposition}%
+        {Washington, DC}%
+        {2017}%
+        {Poster} 
+  \item * \presentation%
+        {\me}%
+        {Studying Semi--Classical Molecular Light--Matter Interaction through Time--Dependent Density Function Theory}%
+        {High Performance Computing Seminar}%
+        {University of Washington, Seattle, WA}%
+        {2017}%
+        {Oral Presentation} 
+  \item \presentation%
+        {\me; Goings, J.J.; \xsli}%
+        {Accelerating Real--Time Time--Dependent Density Functional Theory with a Chebyshev Expansion of the Quantum Propagator}%
+        {Theory and Applications of Computational Chemistry (TACC) 2016}%
+        {Seattle, WA}%
+        {2016}%
+        {Poster} 
 %  \item Egidi F.; \me; \xsli;
 %        ``\emph{Electronic Structure Methods for Relativistic Effects in Excited States}";
 %	Low Scaling and Unconventional Electronic Structure Theory (LUEST) 2016, Telluride, CO.
 %	\textbf{2016}. Poster.
-  \item \me; Yang, W.; \xsli;
-        ``\emph{Moving past the particle-hole description of excited states: Affordable methodologies}";
-	Chemical Congress of Pacific Basin Societies (PacifiChem) 2015, Honolulu, HI.
-	\textbf{2015}. 
-	PHYS: Recent Progress in Molecular Theory for Excited-state Electronic Structure and
-	Dynamics. Oral Presentation.
+  \item \presentation%
+        {\me; Yang, W.; \xsli}%
+        {Moving past the particle-hole description of excited states: Affordable methodologies}%
+        {The International Chemical Congress of Pacific Basin Societies (Pacifichem '15)}%
+        {Honolulu, HI}%
+        {2015}%
+        {Oral Presentation} 
 %  \item Scalmani, G.; Frisch, M.; \me; \xsli;
 %	``\emph{On the analytical second derivatives of the excited state energy in the 
 %	        framework of Time-Dependant Density Functional Theory}";
 %	248h American Chemical Society National Meeting \& Exposition, San Francisco, CA.
 %	\textbf{2014}. COMP: Quantum Chemistry Symposium. Oral Presentation.
-  \item \me; \ko; Ondrechen, M. J.;
-	``\emph{Computational approach to the prediction of enzyme specificities}";
-	245th American Chemical Society National Meeting \& Exposition, New Orleans, LA.
-	\textbf{2013}. Sci-Mix Poster Session. Poster.
-  \item \me; \ko; Ondrechen, M. J.;
-	``\emph{Computational approach to the prediction of enzyme specificities}";
-	245th American Chemical Society National Meeting \& Exposition, New Orleans, LA.
-	\textbf{2013}. Division of Computers in Chemistry Poster Session. Poster.
-  \item \me; \ko;
-	``\emph{Prediction of Relative Activities of Enzymes using Computed Chemical Properties}";
-	American Chemical Society Student Member Symposium, Duquesne University. Duquesne, PA.
-	\textbf{2012}. Poster.
-  \item \me; \ko;
-	``\emph{Prediction of Relative Activities of Enzymes using Computed Chemical Properties}";
-	Undergraduate Research Forum, Indiana University of Pennsylvania. Indiana, PA.
-	\textbf{2012}. Poster.
+  \item \presentation%
+        {\me; \ko; Ondrechen, M.J.}%
+        {Computational approach to the prediction of enzyme specificities}%
+        {245th American Chemical Society National Meeting \& Exposition}%
+        {New Orleans, LA}%
+        {2013}%
+        {Poster} 
+  \item \presentation%
+        {\me; \ko}%
+        {Prediction of Relative Activities of Enzymes using Computed Chemical Properties}%
+        {American Chemical Society Student Member Symposium}%
+        {Duquesne University, Duquesne, PA}%
+        {2012}%
+        {Poster} 
+  \item \presentation%
+        {\me; \ko}%
+        {Prediction of Relative Activities of Enzymes using Computed Chemical Properties}%
+        {Undergraduate Research Forum}%
+        {Indiana University of Pennsylvania. Indiana, PA}%
+        {2012}%
+        {Poster} 
 %  \item Ford, J.; \ko; Mintmier, B.; Machovia, T.; Kang, M.; Owens, A.; \me;
 %	``\emph{Undergraduate Research in Biomass Utilization Symposium}",
 %	Pennsylvania Association of the Council of Trustees Conference, Indiana University of Pennsylvania.
@@ -578,7 +719,7 @@ Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scient
 Alpha Chi Sigma ($\mathrm{AX}\Sigma$), $\Gamma\mathrm{T}$ Chapter, Professional Chemistry Fraternity\\
 American Chemical Society (ACS), Computers in Chemistry Division\\
 American Physical Society (APS) \\
-Society for Industrial and Applied Mathematics (SIAM), Computer Science and Engineering Division
+Society for Industrial and Applied Mathematics (SIAM), Activity Group on Computational Science and Engineering 
 \end{center}
 
 %----------------------------------------------------------------------------------------
