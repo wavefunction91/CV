@@ -27,16 +27,22 @@
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{etaremune}
 \usepackage{hyperref}
+\usepackage{enumitem}
 
 \newsectionwidth{0pt} % Stops section indenting
 
 % Name shortcuts
 \newcommand*\me[0]{{\bf Williams--Young,~D.~B.}}
 \newcommand*\xsli[0]{Li,~X.}
+\newcommand*\cy[0]{Yang,~C.}
+\newcommand*\bdj[0]{de~Jong,~W.A.}
 \newcommand*\ko[0]{Ko,~J.}
 
-\newcommand{\invited}{\item[$*$\theenumi.]}
-%\newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+%\newcommand{\invited}{\item[$*$\theenumi.]}
+\newcommand{\invited}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+\newcommand{\presentation}[6]{%
+{#1}; ``\emph{#2}"; {#3}; {#4}; \textbf{#5}; {#6}.%
+}
 
 \begin{document}
 
@@ -44,198 +50,361 @@
 %	YOUR NAME AND ADDRESS(ES) SECTION
 %----------------------------------------------------------------------------------------
 
-\name{David Williams--Young\\ \\} % Your name at the top
+\name{Dr. David Williams--Young, Ph.D\\ \\} % Your name at the top
 
 % If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
-\address{{\bf Academic Address} \\ 
-Department of Chemistry \\ 
-University of Washington\\ 
-311A Bagley Hall (office)\\
-Box 351700 (mail)\\
-Seattle, WA, USA 98195-1700\\
-dbwy@u.washington.edu} % Your address 1
+\address{Research Scientist (Career),\\
+Applied Commputing for Scientific Discovery Group,\\
+Applied Mathematics and Computational Research Division,\\ 
+Lawrence Berkeley National Laboratory\\ 
++1 (510) 495-2189\\
+dbwy@lbl.gov} % Your address 1
 
-\address{{\bf Permanent Address} \\ 
-1737 NW 56th St \\ 
-Apt 504 \\
-Seattle, WA, USA 98107 \\ 
-+1 (248) 245-1211} % Your address 2
+\address{ {\bf Address} \\ 
+Lawrence Berkeley National Laboratory\\ 
+50F-1645 (office),  
+MS 50F-1650 (mail)\\
+1 Cyclotron Road, 
+Berkeley, CA 94720\\
+%1241 Homestead Ave \\ 
+%Apt 222 \\
+%Walnut Creek, CA, USA 94598
+} % Your address 2
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%%	OBJECTIVE SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{\centerline{OBJECTIVE}}
+%
+%\vspace{8pt} % Gap between title and text
+%
+%To obtain a research position relating to high--performance scientific computing and numerical
+%linear algebra and their interplay with methods development in electronic structure theory.
 
-\section{\centerline{OBJECTIVE}}
-
-\vspace{8pt} % Gap between title and text
-
-To obtain a research position relating to chemical theory and computation.
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{EDUCATION}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Doctor of Philosophy (Pursuant)}, Chemistry \hfill (Projected) May 2018 \\ 
-University of Washington, Seattle, WA   \\ 
-Adviser: Dr. Xiaosong Li
- 
-{\sl Bachelor of Science (Magna Cum Laude)}, Chemistry, Mathematics \hfill May 2013  \\ 
-Indiana University of Pennsylvania, Indiana, PA \\
-Adviser: Dr. Jaeju Ko
 
 %----------------------------------------------------------------------------------------
- 
+%       RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{\centerline{RESEARCH INTERESTS}}
+%\begin{itemize} \itemsep -2pt
+%%  \item Development of low--scaling relativistic electronic structure methods to describe
+%%  strongly correlated systems, such as transition metal complexes commonly found in
+%%  the vicinity of the active sites of enzymes.
+%%  \item Application of abstract mathematical paradigms, such as algebraic topology, to
+%%  develop elegant and novel solutions to the problems that arise in ab initio electronic
+%%  structure theory.
+%%  \item Development of high--performance algorithms to treat the electronically non--adiabatic
+%%  dynamics of quantum molecular systems.
+%  \item Development of high--performance and reduced scaling electronic structure
+%  methods on emerging architectures (GPUs, FPGAs, etc).
+%  \item Development of novel field-theoretic methods for the elucidation of relativistic
+%  electronic structure in superheavy elements.
+%  \item Development of novel quantum algorithms for the simulation of the relativistic
+%  many-body problem.
+%  \item The intersection of high-performance computing and quantum information science.
+%  \item Algorithmic development for high--performance, sparse linear algebra software
+%  (Krylov solvers).
+%  %\item Application of algebraic topology and differential geometry to develop elegant and 
+%  %novel solutions to the problems that arise in ab initio electronic structure theory.
+%\end{itemize}
+
+%\section{\centerline{RESEARCH SUMMARY}}
+%\begin{itemize} \itemsep -2pt
+%  \item \textbf{Relativistic Excited State Electronic Structure Theory}, \emph{2014 -- Present}. 
+%  A primary focus of my current and past research has been the development of efficient relativistic
+%  excited state methods for electronic structure theory. Recently, I have extended the
+%  particle--particle Tamm--Dancoff approximation, a method well known in \emph{ab initio}
+%  nuclear structure theory, to two--component relativistic Hamiltonians. Using this method,
+%  I was able to describe, with excellent accuracy, the fine--structure splitting of the excited
+%  states of a set of atomic and molecular systems [\emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11), 5379--5384].
+%  I am also currently developing relativistic extensions for various other post-SCF methods such as
+%  Coupled Cluster and Configuration Interaction.\\
+%
+%  \item \textbf{Molecular Dynamics}, \emph{2015 -- Present}. Recently, much of my research effort
+%  has been directed to the development of novel and efficient electronic structure methods to describe
+%  the electronic and nuclear dynamics of molecular systems in an \emph{ab initio} manner. I have developed
+%  a revised algorithm for the evaluation of the quantum propagator of time--dependent density functional
+%  theory (TDDFT) through the Chebyshev expansion of the matrix exponential [\emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11) 5333--5338].
+%  In principle, this development makes it possible to achieve linear--scaling electronic dynamics simulations
+%  through the use of sparse matrix manipulation.\\
+%  \\
+%  Further, in collaboration with my colleagues in the Li research group, I have been involved with several 
+%  exciting developments in the field of nonadiabatic excited state nuclear dynamics. The key to the usability
+%  of any nonadiabatic molecular dynamics method is the underlying efficiency of the algorithms used to obtain
+%  the required physical moieties, such as gradients and nonadiabatic couplings, throughout the simulation.
+%  Much of my work in this field has been in the development of extremely efficient and scalable methods to
+%  obtain these quantities. My work has facilitated the development of several methodological developments in the
+%  field, including direct \emph{ab initio} rare event sampling through the meta--surface hopping method
+%  [\emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(3), 935--945], and the analysis of transient vibrational signatures
+%  to describe confomational changes through conformational changes 
+%  [\emph{J. Chem. Phys. Comm.}, \textbf{2016}, 7, 4501--4508].
+%\end{itemize}
+%
+%\section{\centerline{FUTURE RESEARCH STATEMENT}}
+%  My plan for future research directions involves the combination of my previous research topics through
+%  the application of relativistic hamiltonians to describe the nonadibatic behavior of molecular dynamics. To properly
+%  treat nonadiabatic transitions between electronic states of differing spin multiplicities, such as intersystem crossings
+%  and phosphorescence, a proper treatment of spin--orbit coupling is of utmost importance. While several approaches have
+%  been to describe spin--orbit perturbatively in the non--relativistic regime, the only method to properly describe 
+%  the effects of spin--orbit lie in relativistic treatments. Through this research direction, I will be able to better model
+%  many chemical phenomena, such as charge transfer and reaction dynamics, which are often mediated by spin--forbidden processes.
+
+\vspace{0.2in} % Some whitespace between sections
+
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{\centerline{PROFESSIONAL EXPERIENCE}} 
 
-\vspace{8pt} % Gap between title and text
+{\sl \bf Research Scientist (Career)} \dotfill February 2021 -- Present \\
+{\sl \bf Postdoctoral Fellow} \dotfill July 2018 -- February 2021\\
+Applied Mathematics and Computational Research Division \\
+Lawrence Berkeley National Laboratory, 
+Berkeley, CA
 
-{\sl Graduate Research Assistant} \hfill July 2013 -- Present \\
-University of Washington, Seattle, WA
-
-{\sl Graduate Teaching Assistant} \hfill September 2013 -- Present \\
+{\sl \bf Graduate Research Assistant} \dotfill July 2013 -- July 2018 \\
+{\sl \bf Graduate Teaching Assistant} \dotfill September 2013 -- July 2018 \\
+Department of Chemistry \\
 University of Washington, Seattle, WA 
+%\begin{itemize} \itemsep -2pt
+%  \item Provided supplementary lecture instruction for the undergraduate General Chemistry course series
+%    as well as full instruction for the associated lab coursework. This job entailed full responsibility
+%    for two sections of thirty students during a supplemental lecture series referred to as a quiz section.
+%    I was responsible for the evaluation of students' performance both in lecture coursework (exams, homework assignments)
+%    as well as the lab (lab reports).
+%  \item Provided supplementary lecture instruction for the final lecture course (in a series of three) of
+%    the undergraduate Organic Chemistry course series. Primarily, I was responsible for evaluating students' performance on
+%    Exams. In addition, I was responsible for making myself available for course related questions through
+%    structured office hours.
+%  \item Aided in the development of new course material for the second lecture course (in a series of two),
+%    of the graduate Quantum Chemistry course series. The developed course material focused on the practical
+%    development of basic quantum chemical methods, such as Hartree-Fock and Density Functional Theory, using
+%    the MATLAB development environment. The students developed, from scratch, a working implementation
+%    of these methods with the aid of provided course material developed by my self and the primary course
+%    instructor. For this course, I also had the primary responsibility for evaluating students' progress
+%    through the grading of exams and assigned course work.
+%\end{itemize}
 
-{\sl Undergraduate Research Assistant} \hfill September 2011 -- May 2013 \\
-Indiana University of Pennsylvania, Indiana, PA
+%{\sl \bf Undergraduate Research Assistant} \dotfill September 2011 -- May 2013 \\
+%Department of Chemistry \\
+%Indiana University of Pennsylvania, Indiana, PA
 
-{\sl Chemistry Tutor} \hfill August 2010 -- May 2011 \\
-Indiana University of Pennsylvania Disability Services, Indiana, PA 
+%{\sl Chemistry Tutor} \hfill August 2010 -- May 2011 \\
+%Indiana University of Pennsylvania Disability Services, Indiana, PA 
+%\begin{itemize}
+%  \item Provided supplemental course instruction for the General and Organic Chemistry
+%    series for students with disabilities. This primarily entailed meeting with students
+%    individually on a weekly basis to aid in their understanding of course material and 
+%    to ensure that they were not falling behind in coursework.
+%\end{itemize}
+
+%{\sl Information Technology Technician} \hfill August 2009 -- January 2010 \\
+%Central Michigan University Information Technology, Mt. Pleasant, MI
+%%\begin{itemize}
+%%  \item Primarily responsible for solving network connectivity issues for incoming students
+%%    at Central Michigan University.
+%%\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{\centerline{EDUCATION}} 
+
+{\sl\bf  Doctor of Philosophy} (Ph.D.), Chemistry \dotfill May 2018 \\ 
+University of Washington, Seattle, WA   
+%Adviser: Dr. Xiaosong Li \\
+%Dissertation: \emph{Towards Efficient and Scalable Electronic Structure Methods for 
+%the Treatment of Relativistic Effects and Molecular Response}
+ 
+{\sl\bf Bachelor of Science} (B.S., \emph{Magna Cum Laude}), Chemistry, Mathematics \dotfill May 2013  \\ 
+Indiana University of Pennsylvania, Indiana, PA \\
+%Adviser: Dr. Jaeju Ko
+
+
+\vspace{-0.2in}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{SOFTWARE}}
+\vspace{0.1in}
+
+I am the primary developer of the following open-source software packages:
+\begin{itemize} \itemsep -2pt
+  \item {\bf GauXC}:   Enabling high-performance density functional theory calculations on exascale architectures
+  \item {\bf MACIS}:   Massively parallel selected configuration interaction methods
+  \item {\bf ExchCXX}: GPU-accelerated library for the evaluation of exchange-correlation functionals
+\end{itemize}
+
+I have contributed to the development of the following software packages:
+The Chronus Quantum (ChronusQ) Software Package,
+NWChemEx,
+Massively Parallel Quantum Chemistry (MPQC4),
+TiledArray,
+Gaussian
 
 %----------------------------------------------------------------------------------------
 
-
+%\vspace{0.2in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\centerline{PUBLICATIONS}} 
-\vspace{-2pt} % Gap between title and text
-\begin{center}
-{\bf 4 in press publications, 2 as first author}\\
+\section{\centerline{SELECTED PUBLICATIONS}} 
 
-* Indicates equal contribution to published work 
-\end{center}
+\begin{itemize}[leftmargin=*]
+  \item \me; Tubman, N.M.; Mejuto-Zaera, C.; \bdj;
+        ``\emph{A Parallel, Distributed Memory Implementation of the Adaptive 
+                Sampling Configuration Interaction Method}";
+        \emph{J. Chem. Phys.}; \textbf{2023}. 158, 214109. 
+  \item \me; Yuwono, S.; DePrince III, A.E.; \cy; 
+        ``\emph{Approximate Exponential Integrators for Time-Dependent Equation-of-Motion Coupled Cluster Theory}”
+	\emph{J. Chem. Theory Comput.}; \textbf{2023}. 2023, 19, 24, 9177–9186.
+  \item \me; Asadchev, A.; Popovici, D.T; Clark, D.; Waldrop, J.; Windus, T.L.;
+        Valeev, E.F.; \bdj;
+        ``\emph{Distributed Memory, GPU Accelerated Fock Construction for Hybrid, Gaussian 
+                Basis Density Functional Theory}";
+        \emph{J. Chem. Phys.}; \textbf{2023}. 158, 234104.
+  \item \me; Bagusetty, A.; \bdj; Doerfler, D.; vam Dam, H.J.J.; Vazquez--Mayagoitia, A.;
+        Windus, T.L.; Yang, C.;
+        ``\emph{Achieving Performance Portability in Gaussian Basis Set Density Functional Theory 
+                on Accelerator Based Architectures}"; \emph{Parallel Computing},
+        \textbf{2021}, 108, 102829.
+%  \item Di Felice, R.; Mayes, M.; Richard, R.; \me; Chan, G.K.L; \bdj; 
+%        Govind, N.; Head-Gordon, M.; Hermes, M.; Kowalski, K.; Li, X.; Lischka, H.; Mueller, K.; 
+%	Mutlu, E.; Niklasson, A.; Pederson, M.; Peng, B.; Shepard, R.; Valeev, E.; van Schilfgaarde, M.; 
+%	Vlaisavljevich, B.; Windus, T.; Xantheas, S.; Zhang, X.; Zimmerman, P.;
+%	``\emph{A Perspective on Sustainable Computational Chemistry Software Development and Integration}"
+%	\emph{J. Chem. Theory Comput.}; \textbf{2023}. 19, 20, 7056–7076.
+%  \item Kowalski, K.; Bair, R.; Bauman, N.P.; Boschen, J.S.; Bylaska, E.J.; Daily, J.; \bdj; 
+%        Dunning, T.; Govind, N.; Harrison, R.J.; Keceli, M.; Keipert, K.; Krishnamoorthy, S.; Kumar, S.;
+%        Mutlu, E.; Palmer, B.; Panyala, A.; Peng, B.; Richard, R.M.; Straatsma, T.P.; Sushko, P.; Valeev, E.F.;
+%        Valiev, M.; van Dam, H.J.J.; Waldrop, J.M.; \me; \cy; Zalewski, M.; Windus, T.L.;
+%       ``\emph{From NWChem to NWChemEx: Evolving with the Computational Chemistry Landscape}"; \emph{Chemical Reviews},
+%       \textbf{2021}, 121(8), 4962--4998.
+%  \item \me; Petrone, A.; Sun, S.; Stetina, T.F.; Lestrange, P.; Hoyer, C.E.; 
+%        Nascimento, D.R.; Koulias, L.; Wildman, A.; Kasper, J.; Goings, J.J.; 
+%        Ding, F.; DePrince, A.E.; Valeev, E.F.; \xsli;
+%        ``\emph{The Chronus Quantum (ChronusQ) Software Package}"
+%        \emph{WIREs Comput. Mol. Sci.} \textbf{2019}, e1436.
+\end{itemize}
 
-\begin{etaremune}
-  \item Van Beeuman, R.; \me; Kasper, J.; Yang, C.; Ng, E. G.; \xsli;
-        ``\emph{A Model Order Reduction Algorithm for Estimating the 
-	        Absorption Spectrum}"
-        \textbf{2017}, In Preparation.
-  \item \me; Scalmani, G.; Sun, S.; Frisch, M.; \xsli;
-        ``\emph{On the Accurate and Efficient Evaluation of the 
-	        Analytical Hessians of Electronically Excited States 
-		within the Random Phase Approximation}"
-        \textbf{2017}, In Preparation.
-  \item \me; Hongbin Liu; \xsli;
-        ``\emph{Time--Dependent Density Functional Theory (TD-DFT) Benchmark
-	        of Excited--State Polarizabilities}"
-        \textbf{2017}, In Preparation.
-  \item Egidi, F.*; \me*; Baiardi, A.*; Bloino, J.; Scalmani, G.; Frisch, M.; 
-        \xsli; Barone, V.; 
-        ``\emph{Effective Inclusion of Mechanical and Electrical Anharmonicity in 
-                Excited Electronic States: the VPT2-TDDFT Route}"
-          \emph{J. Chem. Theor. Comp.}, \textbf{2017}, Submitted.
-  \item Petrone,~A.*; \me*; Lingerfelt,~D.~B.; \xsli;
-        ``\emph{Ab Initio Transient Raman Analysis}"
-	  \emph{J. Phys. Chem. A.}, \textbf{2017}, Submitted.
-  \item \me*; Lingerfelt, D.~B.*; Petrone, A.; \xsli;
-	``\emph{Ab Initio Surface Hopping Dynamics within the Particle-Particle 
-	        Tamm--Dancoff Approximation}"
-          \emph{J. Chem. Phys. Comm.}, \textbf{2017}, \emph{Submitted}.
-  \item Petrone,~A.; Lingerfelt,~D.~B.; \me; \xsli;
-        ``\emph{Ab Initio Transient Vibrational Spectral Analysis}"
-	  \emph{J. Phys. Chem. Lett.}, \textbf{2016}, 7, 4501--4508.
-  \item \me; Goings,~J.; \xsli;
-	``\emph{Accelerating Real--Time Time-Dependent Density Functional Theory 
-	        with a Non--Recursive Chebyshev Expansion of the Quantum 
-                Propagator}"
-	  \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11) 5333--5338.
-  \item \me; Egidi,~F.; \xsli;
-	``\emph{Relativistic Two-Component Particle-Particle Tamm--Dancoff 
-	        Approximation}"
-	  \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(11), 5379--5384.
-  \item Lingerfelt,~D.~B.; \me; Petrone,~A; \xsli; 
-        ``\emph{Direct ab Initio (Meta-)Surface-Hopping Dynamics}", 
-        \emph{J. Chem. Theor. Comp.}, \textbf{2016}, 12(3), 935--945.
-\end{etaremune}
-%  Papers that are on hold for now:
+
+\section{\centerline{CURRENT PROJECTS}} 
+
+\vspace{5pt}
+
+{\sl\bf Scalable Predictive Methods for Excitations and Correlated Phenomena} \dotfill 2023-2025\\
+DOE-BES (Computational Chemical Sciences - CCS, LAB 17-1775) 
+
+This project focuses on the development of software and algorithms for the
+simulation of molecular excited states with unprecedented predictive power and
+orders-of-magnitude greater computational performance than current methods.
+This project funds the development of the Many-body Adaptive Configuration
+Interaction Suite (MACIS) which will serve as the primary development platform
+for the work considered in this proposal.
+
+\vspace{5pt}
+
+{\sl\bf Relativistic Quantum Dynamics in the Non-Equilibrium Regime} \dotfill 2021-2026\\
+DOE-BES/ASCR (Scientific Discovery through Advacned Computing - SciDAC, DE-SC0022263)
+
+This project focuses on the development of high-performance methods to the
+simulation of relativistic temporal dynamics in complicated many-body quantum
+systems. Through this project we have developed approximate (Krylov subspace),
+massively parallel techniques for the propagation of correlated quantum systems
+with non-hermitian Hamiltonians, such as those arising from coupled cluster
+theory. This project is not related to the work considered in this proposal.
+
+
+\section{\centerline{CURRENT AND RECENT COLLABORATORS}} 
+
+\vspace{5pt}
+
+Karol Kowalski \dotfill (Pacific Northwest National Lab)\\
+Niri Govind \dotfill (Pacific Northwest National Lab)\\
+Bo Peng \dotfill (Pacific Northwest National Lab)\\
+Soritis Xantheas \dotfill (Pacific Northwest National Lab)\\
+Theresa Windus \dotfill (Iowa State University / Ames National Lab)\\
+Ryan Richards \dotfill (Iowa State University / Ames National Lab)\\
+Hubertus Van Dam \dotfill (Brookhaven National Lab)\\
+Murat Keceli \dotfill (Argonne National Lab)\\
+Alvaro Vazquez Mayagoitia \dotfill (Argonne National Lab)\\
+Albert Eugene DePrince III \dotfill (Florida State University)\\
+Edward Valeev \dotfill (Virginia Tech)\\
+Xiaosong Li \dotfill (University of Washington)\\
+
+
+%\section{\centerline{HONORS}} 
 %
-%  \item \me*; Lingerfelt, D.~B.*; Petrone, A.; \xsli;
-%	``\emph{Ab Initio Surface Hopping Dynamics within the Particle-Particle 
-%	        Tamm--Dancoff Approximation}"
-%          \emph{J. Chem. Phys. Comm.}, \textbf{2016}, \emph{Submitted}.
+%\vspace{-5pt} % Reduce space between section title and contents
+%
 %\begin{center}
-%*Authors contributed equally to this work
+%Board Member \hfill Journal of Chemical Theory and Computation Early Career Board (2023) \\
+%CCG Excellence Award for Graduate Students \hfill The Chemical Computing Group (2017) \\
+%MolSSI Software Fellow \hfill Molecular Sciences Software Institute (2017-2018) \\
+%Lloyd E. and Florence M. West Fellowship in Chemistry \hfill Lloyd E. and Florence M. West (2016) \\
+%Excellence in Chemistry Graduate Fellowship Award (ECGFA) \hfill University of Washington (2013)
+%\end{center}
+%
+%%----------------------------------------------------------------------------------------
+%%	SERVICE SECTION
+%%----------------------------------------------------------------------------------------
+%\section{\centerline{PROFESSIONAL SERVICE}} 
+%
+%%\vspace{-5pt} % Reduce space between section title and contents
+%
+%%\begin{center}
+%%Reviewer, \emph{Molecular Physics}                \hfill (2023) \\
+%%Review Panelist, \emph{NSF Office of Advanced Cyberinfrastructure}, \hfill (2022) \\
+%%Reviewer, \emph{The Journal of Chemical Physics}                \hfill (2020) \\
+%%Reviewer, \emph{The International Journal of Quantum Chemistry} \hfill (2020) \\
+%%Reviewer, \emph{Computer Physics Communications}                \hfill (2020) \\
+%%Minisymposium Organizer, \emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020) \\ 
+%%Minisymposium Organizer, \emph{SIAM Conference on Computational Science and Engineering} \hfill (2019,2021,2023) \\ 
+%%Reviewer, \emph{The Journal of Chemical Theory and Computation} \hfill (2019) \\
+%%Reviewer, \emph{Journal of Computational Physics}               \hfill (2019) 
+%%\end{center}
+%~\\
+%\centerline{\bf Journal Review}
+%\vspace{-20pt}
+%\begin{center}
+%  \emph{Molecular Physics}, 
+%  \emph{The Journal of Chemical Physics}, 
+%  \emph{The International Journal of Quantum Chemistry}, 
+%  \emph{Computer Physics Communications},
+%  \emph{The Journal of Chemical Theory and Computation},
+%  \emph{Journal of Computational Physics},
+%  \emph{The Journal of Physical Chemistry}, 
+%  \emph{The Journal of Physical Chemistry A} 
+%\end{center}
+%
+%\centerline{\bf Proposal Review}
+%\vspace{-15pt}
+%\begin{center}
+%\emph{NSF Office of Advanced Cyberinfrastructure} \hfill (2022, 2023) \\
+%\emph{DOE Office of Science, Office of Basic Energy Sciences} \hfill (2023) \\
+%\emph{Natural Sciences and Engineering Research Council of Canada} \hfill (2023)
+%\end{center}
+%
+%\centerline{\bf Conference Symposium Organization}
+%\vspace{-15pt}
+%\begin{center}
+%\emph{SIAM Conference on Computational Science and Engineering}        \hfill (2019, 2021, 2023) \\
+%\emph{SIAM Conference on Parallel Processing for Scientific Computing} \hfill (2020)
 %\end{center}
 
-
-\section{\centerline{CURRENT SOFTWARE CITATIONS}} 
-\vspace{15pt} % Gap between title and text
-
-\begin{etaremune}
-  \item \xsli; Valeev,~E.~F.; \me; Ding,~F.; Liu,~H.; Goings,~J.~J.; Petrone,~A.; Lestrange,~P.;
-        \emph{Chronus Quantum, Beta Version}, \url{http://www.chronusquantum.org}, \textbf{2016}.
-
-\item Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
-      Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Petersson,~G.~A.; Nakatsuji,~H.; \xsli;
-      Caricato,~M.; Marenich,~A.; Bloino,~J.; Janesko,~B.~G.; Gomperts,~R.; Mennucci,~B.;
-      Hratchian,~H.~P.; Izmaylov,~A.~F.; Sonnenberg,~J.~L.; \me; Ding,~F.; Lipparini,~F.;
-      Egidi,~F.; Goings,~J.; Peng,~B.; Petrone,~A.; Ortiz,~J.~V.; Zakrzewski,~V.~G.; Gao,~J.;
-      Rega,~N.; Zheng,~G.; Liang,~W.; Hada,~M.; Ehara,~M.; Toyota,~K.; Fukuda,~R.; Hasegawa,~J.;
-      Ishida,~M.; Nakajima,~T.; Honda,~Y.; Kitao,~O.; Nakai,~H.; Vreven,~T.; Throssell,~K.; Montgomery~Jr.,~J.~A.;
-      Peralta,~J.~E.; Ogliaro,~F.; Bearpark,~M.; Heyd,~J.~J.; Brothers,~E.; Kudin,~K.~N.; Staroverov,~V.~N.; Keith,~T.;
-      Kobayashi,~R.; Normand,~J.; Raghavachari,~K.; Rendell,~A.; Burant,~J.~C.; Iyengar,~S.~S.;
-      Tomasi,~J.; Cossi,~M.; Millam,~J.~M.; Klene,~M.; Adamo,~C.; Cammi,~R.;
-      Ochterski,~J.~W.; Martin,~R.~L.; Morokuma,~K.; Farkas,~O.; Foresman,~J.~B.; and Fox~,~D.~J.;
-      \emph{Gaussian 16, A.03},
-      Gaussian, Inc., Wallingford CT, \textbf{2016}.
-\end{etaremune}
-
-\vspace{0.2in} % Some whitespace between sections
-%----------------------------------------------------------------------------------------
-%	HONORS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{HONORS}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-Nicole A. Boand Endowed Fellowship in Chemistry \hfill ARCS Foundation (2016) \\
-Early Bird Research Assistantship (EBRA) \hfill University of Washington (2013) \\
-Excellence in Chemistry Graduate Fellowship Award (ECGFA) \hfill University of Washington (2013)\\
-Provost Scholar \hfill Indiana University of Pennsylvania (2013)
-\end{center}
-
-%----------------------------------------------------------------------------------------
-%	MEMBERSHIPS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{MEMBERSHIPS}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-Alpha Chi Sigma ($\mathrm{AX}\Sigma$), $\Gamma\mathrm{T}$ Chapter, Professional Chemistry Fraternity\\
-American Chemical Society (ACS), Computers in Chemistry Division
-\end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{resume} 
 \end{document}
